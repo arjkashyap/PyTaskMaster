@@ -20,6 +20,26 @@ response = urllib.request.urlopen(request)
 # Bs4 object
 soup = bs.BeautifulSoup(response, 'lxml')
 
+
+# Traverse through each job description to find the title
+def findTitle(desc):
+    res = []
+    tmp = desc.split()
+    for item in tmp:
+        if item == "Location(s):":
+            break
+        else:
+            res.append(item)
+    return " ".join(res)
+
+# Traverse through each job to find the locaton
+def findLocation(desc):
+    res = []
+    tmp = desc.split()
+    for index in range(tmp.index("Location(s):") + 1, tmp.index("Start")):
+        res.append(tmp[index])
+    return " ".join(res)
+
 # Job Texts and Links for each job application portal
 texts = []
 links = [ tag.get('href') for tag in soup.find_all('a', {'class':'view_detail_button'}) ]
@@ -30,10 +50,9 @@ for div in soup.find_all('div', class_ = 'internship_meta'):
     count += 1
 
 # texts contains a list of all the parsed text divs
-print(texts)
+#print(texts)
 
 # Seperating 
-for i in text:
-    title = findTitle(i)
-
-
+for i in texts:
+    print( findTitle(i) )
+    print( findLocation(i) )   

@@ -3,14 +3,19 @@
 """
 Web parser to collect job listing on basis of attributes 
 recieved via the GUI
+Usage:
+    Run the following command
+    ./scraper.py > jobs.txt
+    To get a list of all the job listings undre computer science departement
 """
 
 import bs4 as bs
 import urllib
 import re
-
+import url
 # Site link
-URL = "https://internshala.com/internships/computer%20science-internship"
+
+URL = url.getUrl()
 
 # Fake user agent
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'

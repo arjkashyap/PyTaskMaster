@@ -7,6 +7,7 @@ recieved via the GUI
 
 import bs4 as bs
 import urllib
+import re
 
 # Site link
 URL = "https://internshala.com/internships/computer%20science-internship"
@@ -40,6 +41,12 @@ def findLocation(desc):
         res.append(tmp[index])
     return " ".join(res)
 
+# Reg ex to find stipend
+def findStipend(desc):
+    regEx = re.compile(r'\d{4}\d?([-]\d{4}\d?)?')
+    mo = regEx.search(desc)
+    return mo.group()
+
 # Job Texts and Links for each job application portal
 texts = []
 links = [ tag.get('href') for tag in soup.find_all('a', {'class':'view_detail_button'}) ]
@@ -55,4 +62,6 @@ for div in soup.find_all('div', class_ = 'internship_meta'):
 # Seperating 
 for i in texts:
     print( findTitle(i) )
-    print( findLocation(i) )   
+    print( findLocation(i) )
+    print(findStipend(i))
+    print("\n")

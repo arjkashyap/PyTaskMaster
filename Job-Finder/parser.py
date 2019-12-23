@@ -7,14 +7,20 @@ Usage:
     Run the following command
     ./scraper.py > jobs.txt
     To get a list of all the job listings undre computer science departement
+
+    Results can be filtered using the grep command:
+    
+    Suppose I am looking for a job in Mumbai:
+    Run: ./scrapper.py > jobs.txt
+    Run: grep -i "mumbai" ./jobs.txt
 """
 
 import bs4 as bs
 import urllib
 import re
 import url
-# Site link
 
+# Site link
 URL = url.getUrl()
 
 # Fake user agent
@@ -46,9 +52,15 @@ def findLocation(desc):
         res.append(tmp[index])
     return " ".join(res)
 
-# Reg ex to find stipend
+# Function contains Reg ex to find stipend
 def findStipend(desc):
     regEx = re.compile(r'\d{4}\d?([-]\d{4}\d?)?')
+    mo = regEx.search(desc)
+    return mo.group()
+
+# Function contains Reg ex to find the duration
+def findDuration(desc):
+    regEx = re.compile(r'\d(\d)?[\s](Month(s)?)')
     mo = regEx.search(desc)
     return mo.group()
 
@@ -64,9 +76,15 @@ for div in soup.find_all('div', class_ = 'internship_meta'):
 # texts contains a list of all the parsed text divs
 #print(texts)
 
-# Seperating 
+linkIndex = 0
+
+# Seperating Variables
 for i in texts:
+    print("#" + str(linkIndex + 1))
     print( findTitle(i) )
-    print( findLocation(i) )
-    print(findStipend(i))
+    print("Location: " + str(findLocation(i)) )
+    print("Stipend: " + str(findStipend(i)))
+    print("Duration: " + str(findDuration(i)))
+    print("Link: " + "https://internshala.com" + str(links[linkIndex]))
+    linkIndex += 1
     print("\n")

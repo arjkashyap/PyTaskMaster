@@ -1,200 +1,320 @@
+#1
 Web Development Internshala
-Gurgaon
-20000
+Location: Gurgaon
+Stipend: 20000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-gurgaon-at-internshala1576556752
 
 
+#2
 Product Development Zoomcar India Private Limited
-Bangalore
-10000
+Location: Bangalore
+Stipend: 10000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/product-development-internship-in-bangalore-at-zoomcar-india-private-limited1576811525
 
 
+#3
 Desktop Application Development IIT Bombay
-Mumbai
-5000-10000
+Location: Mumbai
+Stipend: 5000-10000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/desktop-application-development-internship-in-mumbai-at-iit-bombay1576651760
 
 
+#4
 Web Development The Tata Institute Of Social Sciences (TISS)
-Mumbai
-3000
+Location: Mumbai
+Stipend: 3000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-part-time-job-internship-at-mumbai-in-the-tata-institute-of-social-sciences-tiss1576485567
 
 
+#5
 Backend Web Development & Machine Learning IIT Bombay
-Mumbai
-3000-5000
+Location: Mumbai
+Stipend: 3000-5000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/backend-web-development-machine-learning-internship-in-mumbai-at-iit-bombay1575967607
 
 
+#6
 Web Development Viacom India LLP
-Gurugram
-3000-4000
+Location: Gurugram
+Stipend: 3000-4000
+Duration: 1 Month
+Link: https://internshala.com/internship/detail/web-development-internship-in-gurugram-at-viacom-india-llp1575564706
 
 
+#7
+Full Stack Development 360 Digital Transformation
+Location: Delhi
+Stipend: 3500-7000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/full-stack-development-internship-in-delhi-at-360-digital-transformation1577059515
+
+
+#8
+Front End Web Development Superflow Media
+Location: Mumbai
+Stipend: 15000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/front-end-web-development-internship-in-mumbai-at-superflow-media1577059374
+
+
+#9
+Information Technology 39iifs
+Location: Mumbai
+Stipend: 2000-5000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/information-technology-internship-in-mumbai-at-39iifs1576934554
+
+
+#10
 Backend Development Devlofox Technologies LLP
-Delhi
-4000-6000
+Location: Delhi
+Stipend: 4000-6000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/backend-development-part-time-job-internship-at-delhi-in-devlofox-technologies-llp1576933782
 
 
+#11
 Web Development Brand Studioz
-Noida
-7000-10000
+Location: Noida
+Stipend: 7000-10000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-noida-at-brand-studioz1576951100
 
 
+#12
 Mobile App Development Sixth Sensor Technology Private Limited
-Mumbai
-12000
+Location: Mumbai
+Stipend: 12000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/mobile-app-development-part-time-job-internship-at-mumbai-in-sixth-sensor-technology-private-limited1576928838
 
 
+#13
 Web Development Escapers
-Mumbai
-5000
+Location: Mumbai
+Stipend: 5000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-mumbai-at-escapers1577044977
 
 
+#14
 Web Development CriTaxCorp
-Delhi
-8000
+Location: Delhi
+Stipend: 8000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-delhi-at-critaxcorp1576926785
 
 
+#15
 Web Development Tech Prastish Software Solutions Private Limited
-Mohali
-5000
+Location: Mohali
+Stipend: 5000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-mohali-at-tech-prastish-software-solutions-private-limited1577043781
 
 
+#16
 Mobile App Development Tech Prastish Software Solutions Private Limited
-Mohali
-5000
+Location: Mohali
+Stipend: 5000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/mobile-app-development-internship-in-mohali-at-tech-prastish-software-solutions-private-limited1577043765
 
 
+#17
 Website Development Make Me Builder
-Delhi, Ghaziabad, Pataudi, Greater Noida, Noida, Rewari, Gurgaon, Central
-4000
+Location: Delhi, Ghaziabad, Pataudi, Greater Noida, Noida, Rewari, Gurgaon, Central
+Stipend: 4000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/website-development-part-time-job-internship-at-multiple-locations-in-make-me-builder1577043559
 
 
+#18
 Web Development MicroDegree
-Mangalore
-9000-15000
+Location: Mangalore
+Stipend: 9000-15000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-mangalore-at-microdegree1576836434
 
 
+#19
 Flutter Development Bintree Software
-Jaipur
-5000
+Location: Jaipur
+Stipend: 5000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/flutter-development-internship-in-jaipur-at-bintree-software1577042636
 
 
+#20
 Web Development InterviewBuddy
-Visakhapatnam
-4000
+Location: Visakhapatnam
+Stipend: 4000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-visakhapatnam-at-interviewbuddy1576921419
 
 
+#21
 Software Development Dot2Globe Solutions India Private Limited
-Chennai
-10000
+Location: Chennai
+Stipend: 10000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/software-development-internship-in-chennai-at-dot2globe-solutions-india-private-limited1577042033
 
 
+#22
 Android Development (FrontEnd/UI/UX) Across The Globe (ATG)
-Work From Home
-1500
+Location: Work From Home
+Stipend: 1500
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/android-development-frontend-ui-ux-work-from-home-job-internship-at-across-the-globe-atg1576922365
 
 
+#23
 Python Development Team Audit House
-Lucknow
-2000-5000
+Location: Lucknow
+Stipend: 2000-5000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/python-development-internship-in-lucknow-at-team-audit-house1576914056
 
 
+#24
 Web Development Achiwer
-Rajamahendravaram, Kakinada, Pithapuram
-3000-6000
+Location: Rajamahendravaram, Kakinada, Pithapuram
+Stipend: 3000-6000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-multiple-locations-at-achiwer1576921121
 
 
+#25
 WordPress Development Startup Spine
-Delhi
-3000-5000
+Location: Delhi
+Stipend: 3000-5000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/wordpress-development-part-time-job-internship-at-delhi-in-startup-spine1577039976
 
 
+#26
 Web Development Group Futurista
-Mumbai
-25000
+Location: Mumbai
+Stipend: 25000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-mumbai-at-group-futurista1576919879
 
 
+#27
 Web Development Travarsa Private Limited
-Kolkata
-3000-8000
+Location: Kolkata
+Stipend: 3000-8000
+Duration: 1 Month
+Link: https://internshala.com/internship/detail/web-development-internship-in-kolkata-at-travarsa-private-limited1577039220
 
 
+#28
 Python Development Career Eduventures
-Delhi
-5000
+Location: Delhi
+Stipend: 5000
+Duration: 1 Month
+Link: https://internshala.com/internship/detail/python-development-internship-in-delhi-at-career-eduventures1576919438
 
 
+#29
 Mobile App Development Career Eduventures
-Delhi
-5000
+Location: Delhi
+Stipend: 5000
+Duration: 1 Month
+Link: https://internshala.com/internship/detail/mobile-app-development-internship-in-delhi-at-career-eduventures1576919176
 
 
+#30
 PHP Development Gaatha ~ A Tale Of Crafts
-Ahmedabad
-5000-8000
+Location: Ahmedabad
+Stipend: 5000-8000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/php-development-internship-in-ahmedabad-at-gaatha--a-tale-of-crafts1577038699
 
 
+#31
 Web Development Shaw Academy
-Bangalore
-10000-20000
+Location: Bangalore
+Stipend: 10000-20000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-bangalore-at-shaw-academy1576823083
 
 
+#32
 Web Development Jatin Gahlot
-Delhi
-10000-15000
+Location: Delhi
+Stipend: 10000-15000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-internship-in-delhi-at-jatin-gahlot1576814061
 
 
+#33
 Artificial Intelligence (AI) Orbit Shifters
-Work From Home
-3000-5000
+Location: Work From Home
+Stipend: 3000-5000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/artificial-intelligence-ai-work-from-home-job-internship-at-orbit-shifters1576746089
 
 
+#34
 Data Science Quantum AI Systems
-Hyderabad
-2000
+Location: Hyderabad
+Stipend: 2000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/data-science-internship-in-hyderabad-at-quantum-ai-systems1577034679
 
 
+#35
 Front End Development Datsme
-Work From Home
-1000
+Location: Work From Home
+Stipend: 1000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/front-end-development-work-from-home-job-internship-at-datsme1577034647
 
 
+#36
 Web Development Datsme
-Work From Home
-5000
+Location: Work From Home
+Stipend: 5000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/web-development-work-from-home-job-internship-at-datsme1577034638
 
 
+#37
 Mobile App Development Datsme
-Work From Home
-10000
+Location: Work From Home
+Stipend: 10000
+Duration: 2 Months
+Link: https://internshala.com/internship/detail/mobile-app-development-work-from-home-job-internship-at-datsme1577034619
 
 
+#38
 Web Development EMVOKE TECHNOLOGIES PRIVATE LIMITED
-Work From Home
-5000-10000
+Location: Work From Home
+Stipend: 5000-10000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/web-development-work-from-home-job-internship-at-emvoke-technologies-private-limited1577034546
 
 
+#39
 Web Development Lance Learning Solutions
-Chennai
-3000-8000
+Location: Chennai
+Stipend: 3000-8000
+Duration: 3 Months
+Link: https://internshala.com/internship/detail/web-development-part-time-job-internship-at-chennai-in-lance-learning-solutions1577033473
 
 
+#40
 Web Development BallotNow
-Work From Home
-5000-6000
-
-
-Web Development Exam Preparation Online
-Work From Home
-5000-10000
-
-
-Web Development J & B Technologies
-Work From Home
-1500
-
-
-Mobile App Development Citispotter
-Work From Home
-2000
+Location: Work From Home
+Stipend: 5000-6000
+Duration: 6 Months
+Link: https://internshala.com/internship/detail/web-development-work-from-home-job-internship-at-ballotnow1577030928
 
 

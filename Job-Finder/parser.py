@@ -60,10 +60,9 @@ def findStipend(desc):
 
 # Function contains Reg ex to find the duration
 def findDuration(desc):
-    regEx = re.compile(r'\d(\d)?[\s](Month(s)?)')
+    regEx = re.compile(r'\d\s(\w)*')
     mo = regEx.search(desc)
     return mo.group()
-
 # Job Texts and Links for each job application portal
 texts = []
 links = [ tag.get('href') for tag in soup.find_all('a', {'class':'view_detail_button'}) ]

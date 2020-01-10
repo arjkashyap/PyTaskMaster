@@ -18,6 +18,10 @@ lst = ["", "animal-jokes", "dirty-jokes", "disabled-jokes", "hilarious-jokes", "
 
 # Pass the list index as a parameter to return url with selected catagory
 def getUrl(cat):
-    url = "http://www.funnyshortjokes.com/"+lst[cat]
+    url = "http://www.funnyshortjokes.com/"
+    if cat != 0:
+        url += "c/"+lst[cat]
+    print("url obtained from geturl")
+    print(url)
     return url
 

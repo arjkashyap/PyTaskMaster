@@ -16,7 +16,7 @@ Usage:
 """
 
 import bs4 as bs
-import urllib
+import urllib.request
 import re
 import url
 

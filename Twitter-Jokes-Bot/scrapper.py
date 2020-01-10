@@ -15,10 +15,13 @@ import url
 import time
 
 # Link to be parsed
-URL = url.getUrl(0)
+URL = url.getUrl(3)
 
 # Fake user agaent
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+
+# List stores all the parsed text
+all_content = []
 
 # Function to extract jokes from the current page
 def parsePage():
@@ -29,7 +32,8 @@ def parsePage():
     # Bs4 Object
     soup = bs.BeautifulSoup(response, 'lxml')
     for div in soup.find_all('div', class_ = 'post-text'):
-        print(str(div.text))
+        #print(str(div.text))
+        all_content.append(str(div.text))
 
 # Find the maximum number of pages in the url
 def findMaxPages():
@@ -44,6 +48,8 @@ def findMaxPages():
     maxPages = pages[-1]
     print("Max pages: " + str(maxPages))
     return maxPages
+
+
 
 parsePage()
 
@@ -63,4 +69,5 @@ while currentPage <= maxPages:
     currentPage += 1
 
 
-
+print("all content is stored in this list")
+print(all_content)

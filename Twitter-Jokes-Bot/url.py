@@ -21,7 +21,5 @@ def getUrl(cat):
     url = "http://www.funnyshortjokes.com/"
     if cat != 0:
         url += "c/"+lst[cat]
-    print("url obtained from geturl")
-    print(url)
     return url
 

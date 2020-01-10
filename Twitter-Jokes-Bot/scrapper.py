@@ -15,7 +15,7 @@ import url
 import time
 
 # Link to be parsed
-URL = url.getUrl(3)
+URL = url.getUrl(0)
 
 # Fake user agaent
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
@@ -32,7 +32,6 @@ def parsePage():
     # Bs4 Object
     soup = bs.BeautifulSoup(response, 'lxml')
     for div in soup.find_all('div', class_ = 'post-text'):
-        #print(str(div.text))
         all_content.append(str(div.text))
 
 # Find the maximum number of pages in the url
@@ -46,7 +45,6 @@ def findMaxPages():
     for div in soup.find_all('span', class_ = 'item'):
         pages.append(int(div.text))
     maxPages = pages[-1]
-    print("Max pages: " + str(maxPages))
     return maxPages
 
 
@@ -54,7 +52,10 @@ def findMaxPages():
 parsePage()
 
 currentPage = 2
-maxPages = findMaxPages()
+# Use this in case you want to parse the whole site
+
+#maxPages = findMaxPages()
+maxPages = 15
 
 resetUrl = URL
 URL += "/page"
@@ -68,6 +69,5 @@ while currentPage <= maxPages:
     URL = "/".join(URL)
     currentPage += 1
 
+#print(all_content)
 
-print("all content is stored in this list")
-print(all_content)

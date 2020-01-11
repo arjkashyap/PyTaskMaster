@@ -1,2 +1,4 @@
 config.py
 tweetNum.txt
+geckodriver
+geckodriver.log

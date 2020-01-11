@@ -24,12 +24,13 @@
 <p>
 	You need to create a file named config.py in the root dir.
 	add the following lines in it:
+</p>
+
 	username: "yourtwitterusername"
 	pswd: "yourpassword"
 	
 	denied = []  # Enter the list of words which will serve as a parameter to filter out Offensive tweets 
 		
-</p>
 
 <p> Finnaly run publish.py. </p>
 

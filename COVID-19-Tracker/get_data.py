@@ -44,9 +44,10 @@ def current_data():
 
 # Create csv file of current data parsed
 def create_csv(data):
+    csv_path = "data/"
     today = date.today()
     current_date = today.strftime("%d-%m-%Y")
-    file_name = current_date + ".csv"
+    file_name = csv_path + current_date + ".csv"
 
     # Write headers
     with open(file_name, 'w') as f:

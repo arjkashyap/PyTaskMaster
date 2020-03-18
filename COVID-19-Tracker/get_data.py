@@ -59,6 +59,4 @@ def create_csv(data):
             w.writerow(row)
     print("File write Complete")
 
-create_csv(current_data())
-
 

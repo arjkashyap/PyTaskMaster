@@ -15,11 +15,15 @@ import pandas as pd
 from datetime import date
 from get_data import current_data, create_csv 
 import glob
+import re
 
 path = "data/"
+
+# Sort CSV files according to each date
 data_lst = glob.glob("data/*.csv")
 data_lst.sort(key = os.path.getmtime, reverse = True)
-print(data_lst)
+
+# Draw bar chart based on latest data
 def bar_chart():
     today = date.today()
     current_date = today.strftime("%d-%m-%Y")
@@ -78,8 +82,23 @@ def bar_chart():
     plt.savefig("saved_graphs/" + current_date + ".png")
     plt.show()
 
-bar_chart()
+# Draw graph which shows the progression through each date
+def spread_chart():
+    data = list(reversed(data_lst))
+    x_labels = []
+    
+    # Reg ex to extract date
+    regex = re.compile(r"\d\d[-]\d\d[-]\d\d\d\d")
+    for day in data:
+        label = regex.search(day)
+        df = pd.read_csv(day)
+        print(label.group())
+        x_labels.append(label.group())
+  #  cnf_in =df['indian_confirmed'].tolist()         # Confirmed Indian cases 
+  #  cnf_fn = df['foreign_confirmed'].tolist()        # Confirmed Foreigners
+  #  cured = df['cured'].tolist()
+  #  death = df['death'].tolist()
+  #  del cnf_in[-1], cnf_fn[-1], cured[-1], death[-1]
 
-
-
-
+    print(x_labels)
+spread_chart()

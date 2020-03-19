@@ -32,25 +32,22 @@ def bar_chart():
     if len(data_lst) == 0:
         create_csv(current_data())
 
-    print("File path: ", file_path)
     df = pd.read_csv(file_path)
     states = df['state'].tolist()
     del states[-1]
     n_groups = len(states)      # Number of groups
     states = tuple(states)
-    print(states)
 
     cnf_in =df['indian_confirmed'].tolist()         # Confirmed Indian cases 
     cnf_fn = df['foreign_confirmed'].tolist()        # Confirmed Foreigners
     cured = df['cured'].tolist()
     death = df['death'].tolist()
     del cnf_in[-1], cnf_fn[-1], cured[-1], death[-1]
-   
+
     # Creating Plot
     fig, ax = plt.subplots()
-    
+
     index = np.arange(n_groups)
-    print(len(index))
     bar_width = 0.5
     opacity = 0.8
     leg_1 = plt.bar(index, cnf_in, bar_width,
@@ -82,23 +79,44 @@ def bar_chart():
     plt.savefig("saved_graphs/" + current_date + ".png")
     plt.show()
 
+
 # Draw graph which shows the progression through each date
 def spread_chart():
     data = list(reversed(data_lst))
     x_labels = []
-    
+
+    cnf_in_lst = []
+    cnf_fn_lst = []
+    cured_lst = []
+    death_lst = []
+
     # Reg ex to extract date
     regex = re.compile(r"\d\d[-]\d\d[-]\d\d\d\d")
     for day in data:
         label = regex.search(day)
         df = pd.read_csv(day)
-        print(label.group())
         x_labels.append(label.group())
-  #  cnf_in =df['indian_confirmed'].tolist()         # Confirmed Indian cases 
-  #  cnf_fn = df['foreign_confirmed'].tolist()        # Confirmed Foreigners
-  #  cured = df['cured'].tolist()
-  #  death = df['death'].tolist()
-  #  del cnf_in[-1], cnf_fn[-1], cured[-1], death[-1]
+        cnf_in = df['indian_confirmed'].tolist()         # Confirmed Indian cases 
+        cnf_fn = df['foreign_confirmed'].tolist()      # Confirmed Foreigners
+        cured = df['cured'].tolist()
+        death = df['death'].tolist()
+        del cured[-1], death[-1], cnf_fn[-1], cnf_in[-1]
 
-    print(x_labels)
+        cnf_in_lst.append(sum(cnf_in))
+        cnf_fn_lst.append(sum(cnf_fn))
+        cured_lst.append(sum(cured))
+        death_lst.append(sum(death))
+
+    # Plotting categorically
+    plt.figure(figsize=(7, 4))
+    plt.plot(x_labels, cnf_in_lst, color='#05028f')
+    plt.plot(x_labels, cnf_fn_lst, color='#6aafdb')
+    plt.plot(x_labels, cured_lst, color='#00c20f')
+    plt.plot(x_labels, death_lst, color='#ff3f0f')
+    plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
+    plt.show()
+
+bar_chart()
 spread_chart()
+
+

@@ -113,6 +113,7 @@ def spread_chart():
     plt.plot(x_labels, cnf_fn_lst, color='#6aafdb')
     plt.plot(x_labels, cured_lst, color='#00c20f')
     plt.plot(x_labels, death_lst, color='#ff3f0f')
+    plt.legend()
     plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
     plt.show()
 

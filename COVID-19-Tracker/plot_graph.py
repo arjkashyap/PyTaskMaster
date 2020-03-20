@@ -54,27 +54,33 @@ def bar_chart():
             alpha=opacity,
             color='#05028f',
             label='Indian Confirmed',
-            )
+            yerr = None)
 
     leg_2 = plt.bar(index, cnf_fn, bar_width,
             alpha=opacity,
             color='#6aafdb',
-            label='Foreign Confirmed')
+            label='Foreign Confirmed',
+            yerr=None
+            )
 
     leg_3 = plt.bar(index, cured, bar_width,
             alpha=opacity,
             color='#00c20f',
-            label='Cured')
+            label='Cured',
+            yerr=None
+            )
 
     leg_4 = plt.bar(index, death, bar_width,
             alpha=opacity,
             color='#ff3f0f',
-            label='Deaths')
+            label='Deaths',
+            yerr=None
+            )
 
-    plt.xlabel('People')
+    plt.xlabel('People', fontweight='bold', fontsize='17', horizontalalignment='center')
     plt.ylabel('Number')
     plt.title('COVID-19 Data (statewise)')
-    plt.xticks(index + bar_width, states, rotation = 90)
+    plt.xticks(index, states, rotation = 90)
     plt.legend() 
     plt.savefig("saved_graphs/" + current_date + ".png")
     plt.show()

@@ -123,7 +123,7 @@ def spread_chart():
     plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
     plt.show()
 
-#bar_chart()
-#spread_chart()
+bar_chart()
+spread_chart()
 
 

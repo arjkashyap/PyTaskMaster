@@ -107,6 +107,7 @@ def spread_chart():
         cured = df['cured'].tolist()
         death = df['death'].tolist()
         del cured[-1], death[-1], cnf_fn[-1], cnf_in[-1]
+        cnf_in = list(map(int, cnf_in))
 
         cnf_in_lst.append(sum(cnf_in))
         cnf_fn_lst.append(sum(cnf_fn))

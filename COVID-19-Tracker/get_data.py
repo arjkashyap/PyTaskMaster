@@ -13,12 +13,21 @@ import urllib.request
 import re
 from datetime import date
 import csv
-
+from time import sleep
+from selenium import webdriver
 
 # Function returns 2d array of confirmed cases in each state
 def current_data():
+    # Driver for controlling browser
+    driver = webdriver.Firefox()
     data = []
     URL = "https://www.mohfw.gov.in/"
+
+    driver.get(URL)
+    sleep(3)
+    btn = driver.find_element_by_xpath("/html/body/div[2]/div/div/div[2]/strong/button")
+    btn.click()
+    sleep(3)
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
 
     request = urllib.request.Request(URL, headers={'User-Agent': user_agent})
@@ -27,15 +36,16 @@ def current_data():
     # BS4 object
     soup = bs.BeautifulSoup(response, 'lxml')
 
-    # Data table
-    table = soup.find('table')
-    table_rows = table.find_all('tr')
 
-    for tr in table_rows:
-        td = tr.find_all('td')
-        row = [r.text for r in td]
-        data.append(row)
-    del data[0]
+    # Data table
+    table =soup.select('table')[-1]
+    rows = table.find_all('tr')
+    for row in rows:
+        cols = row.find_all('td')
+        cols = [item.text.strip() for item in cols]
+        data.append([item for item in cols if item])
+    print(data)
+    del data[-1]
     for i in data:
         print(i)
     print("Data Scrap: complete")

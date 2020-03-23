@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import os
 import pandas as pd
 from datetime import date
-from get_data import current_data, create_csv 
+#from get_data import current_data, create_csv 
 import glob
 import re
 
@@ -100,13 +100,15 @@ def spread_chart():
     regex = re.compile(r"\d\d[-]\d\d[-]\d\d\d\d")
     for day in data:
         label = regex.search(day)
-        df = pd.read_csv(day)
+#        df = pd.read_csv(day)
+        df = pd.read_csv(day, header = None, delimiter="\t", quoting=csv.QUOTE_NONE, encoding='utf-8')
+        df.drop(df.tail(1).index,inplace=True) # drop last n rows
+        print(df)
         x_labels.append(label.group())
         cnf_in = df['indian_confirmed'].tolist()         # Confirmed Indian cases 
         cnf_fn = df['foreign_confirmed'].tolist()      # Confirmed Foreigners
         cured = df['cured'].tolist()
         death = df['death'].tolist()
-        del cured[-1], death[-1], cnf_fn[-1], cnf_in[-1]
         cnf_in = list(map(int, cnf_in))
 
         cnf_in_lst.append(sum(cnf_in))
@@ -124,7 +126,7 @@ def spread_chart():
     plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
     plt.show()
 
-bar_chart()
+#bar_chart()
 spread_chart()
 
 

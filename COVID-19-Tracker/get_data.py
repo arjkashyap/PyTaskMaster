@@ -25,7 +25,7 @@ def current_data():
 
     driver.get(URL)
     sleep(3)
-    btn = driver.find_element_by_xpath("/html/body/div[2]/div/div/div[2]/strong/button")
+    btn = driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/strong/div[8]/button")
     btn.click()
     sleep(3)
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'

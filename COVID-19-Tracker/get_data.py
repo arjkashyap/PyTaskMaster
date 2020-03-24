@@ -68,5 +68,5 @@ def create_csv(data):
         for row in data:
             w.writerow(row)
     print("File write Complete")
-
+    return 1
 create_csv(current_data())

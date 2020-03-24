@@ -1,4 +1,5 @@
 label,state,indian_confirmed,foreign_confirmed,cured,death
+
 1,Andhra Pradesh,1,0,0,0
 2,Delhi,9,1,2,1
 3,Haryana,2,14,0,0
@@ -15,10 +16,4 @@ label,state,indian_confirmed,foreign_confirmed,cured,death
 14,Uttar Pradesh,15,1,5,0
 15,Uttarakhand,1,0,0,0
 16,West Bengal,1,0,0,0
-Total number of confirmed cases in India,122,"
-25
-","
-14
-","
-3
-"
+

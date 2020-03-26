@@ -110,6 +110,8 @@ def spread_chart():
         cnf_fn = df['foreign_confirmed'].tolist()      # Confirmed Foreigners
         cured = df['cured'].tolist()
         death = df['death'].tolist()
+        cnf_in = [x for x in cnf_in if x == x]
+        print(cnf_in)
         cnf_in = list(map(int, cnf_in))
         cnf_in_lst.append(sum(cnf_in))
         cnf_fn_lst.append(sum(cnf_fn))
@@ -117,7 +119,7 @@ def spread_chart():
         death_lst.append(sum(death))
 
     # Plotting categorically
-    plt.figure(figsize=(7, 4))
+    plt.figure(figsize=(10, 5))
     plt.plot(x_labels, cnf_in_lst, color='#05028f')
     plt.plot(x_labels, cnf_fn_lst, color='#6aafdb')
     plt.plot(x_labels, cured_lst, color='#00c20f')
@@ -125,7 +127,6 @@ def spread_chart():
     plt.legend()
     plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
     plt.show()
-
 bar_chart()
 spread_chart()
 

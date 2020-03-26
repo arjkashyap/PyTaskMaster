@@ -648,3 +648,54 @@ JavaScript error: https://www.mohfw.gov.in/, line 927: TypeError: $(...).carouse
 1585039414422	Marionette	WARN	TLS certificate errors will be ignored for this session
 1585039421791	Marionette	INFO	Stopped listening on port 33237
 1585039427272	Marionette	INFO	Stopped listening on port 34905
+1585076392955	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileh453qk"
+1585076393290	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585076393620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585076393620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585076393620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585076393620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+[2020-03-24T18:59:54Z ERROR audio_thread_priority::rt_linux] setrlimit64: 1
+1585076395052	Marionette	INFO	Listening on port 34587
+1585076395067	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mohfw.gov.in/, line 1043: TypeError: $(...).carousel is not a function
+1585076421346	Marionette	INFO	Stopped listening on port 34587
+1585134348629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea1ZvlW"
+1585134348933	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585134349213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585134349213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585134349213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585134349213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585134350602	Marionette	INFO	Listening on port 40241
+1585134350640	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mohfw.gov.in/, line 1071: TypeError: $(...).carousel is not a function
+1585134394331	Marionette	INFO	Stopped listening on port 40241
+1585139055716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIebVDh"
+1585139056008	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585139056353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585139056353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585139056353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585139056353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585139057924	Marionette	INFO	Listening on port 35391
+1585139058024	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mohfw.gov.in/, line 1071: TypeError: $(...).carousel is not a function
+1585139078330	Marionette	INFO	Stopped listening on port 35391
+1585240297992	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRasPvu"
+1585240298422	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585240298695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585240298695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585240298695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585240298695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585240300320	Marionette	INFO	Listening on port 36795
+1585240300399	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mohfw.gov.in/, line 1107: TypeError: $(...).carousel is not a function
+1585240362518	Marionette	INFO	Stopped listening on port 36795
+1585240378556	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJWMvrg"
+1585240378848	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585240379136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585240379136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585240379136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585240379136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585240380512	Marionette	INFO	Listening on port 34987
+1585240380561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mohfw.gov.in/, line 1107: TypeError: $(...).carousel is not a function
+1585240420797	Marionette	INFO	Stopped listening on port 34987

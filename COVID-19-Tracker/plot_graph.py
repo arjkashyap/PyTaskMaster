@@ -130,10 +130,9 @@ def spread_chart():
 def linePlot(labels, lst, clr):
     plt.figure(figsize=(10, 5))
     plt.plot(labels, lst, color = clr)
-
-
-#bar_chart()
-
+    plt.xticks(rotation = 'vertical')
+    plt.savefig("saved_graphs/" + labels[-1] + "_progress" + ".png")
+bar_chart()
 spread_chart()
 
 

@@ -729,3 +729,13 @@ Exiting due to channel error.
 1585374229542	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://www.mohfw.gov.in/, line 1199: TypeError: $(...).carousel is not a function
 1585374289621	Marionette	INFO	Stopped listening on port 35039
+1585428559995	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileteUmc1"
+1585428560302	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585428560596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585428560596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585428560596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585428560596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585428562175	Marionette	INFO	Listening on port 36087
+1585428562207	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mohfw.gov.in/, line 1255: TypeError: $(...).carousel is not a function
+1585428630536	Marionette	INFO	Stopped listening on port 36087

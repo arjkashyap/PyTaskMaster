@@ -119,15 +119,21 @@ def spread_chart():
         death_lst.append(sum(death))
 
     # Plotting categorically
-    plt.figure(figsize=(10, 5))
-    plt.plot(x_labels, cnf_in_lst, color='#05028f')
-    plt.plot(x_labels, cnf_fn_lst, color='#6aafdb')
-    plt.plot(x_labels, cured_lst, color='#00c20f')
-    plt.plot(x_labels, death_lst, color='#ff3f0f')
-    plt.legend()
-    plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
+    linePlot(x_labels, cnf_in_lst, '#05028f')
+    linePlot(x_labels, cnf_fn_lst, '#6aafdb')
+    linePlot(x_labels, cured_lst,'#00c20f')
+    linePlot(x_labels, death_lst, '#ff3f0f')
+    #plt.legend()
+    #plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
     plt.show()
-bar_chart()
+
+def linePlot(labels, lst, clr):
+    plt.figure(figsize=(10, 5))
+    plt.plot(labels, lst, color = clr)
+
+
+#bar_chart()
+
 spread_chart()
 
 

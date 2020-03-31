@@ -1,0 +1,30 @@
+label,state,indian_confirmed,foreign_confirmed,cured,death
+
+1,Andhra Pradesh,23,1,0
+2,Andaman and Nicobar Islands,9,0,0
+3,Bihar,15,0,1
+4,Chandigarh,8,0,0
+5,Chhattisgarh,7,0,0
+6,Delhi,87,6,2
+7,Goa,5,0,0
+8,Gujarat,69,1,6
+9,Haryana,36,18,0
+10,Himachal Pradesh,3,0,1
+11,Jammu and Kashmir,48,2,2
+12,Karnataka,83,5,3
+13,Kerala,202,19,1
+14,Ladakh,13,3,0
+15,Madhya Pradesh,47,0,3
+16,Maharashtra,198,25,8
+17,Manipur,1,0,0
+18,Mizoram,1,0,0
+19,Odisha,3,0,0
+20,Puducherry,1,0,0
+21,Punjab,38,1,1
+22,Rajasthan,59,3,0
+23,Tamil Nadu,67,4,1
+24,Telengana,71,1,1
+25,Uttarakhand,7,2,0
+26,Uttar Pradesh,82,11,0
+27,West Bengal,22,0,2
+Total number of confirmed cases in India,1251#,102,32

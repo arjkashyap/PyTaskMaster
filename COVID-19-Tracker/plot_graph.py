@@ -119,19 +119,30 @@ def spread_chart():
         death_lst.append(sum(death))
 
     # Plotting categorically
-    linePlot(x_labels, cnf_in_lst, '#05028f')
-    linePlot(x_labels, cnf_fn_lst, '#6aafdb')
-    linePlot(x_labels, cured_lst,'#00c20f')
-    linePlot(x_labels, death_lst, '#ff3f0f')
+    linePlot(x_labels, cnf_in_lst, '#05028f', 0)
+    linePlot(x_labels, cnf_fn_lst, '#6aafdb', 1)
+    linePlot(x_labels, cured_lst,'#00c20f', 2)
+    linePlot(x_labels, death_lst, '#ff3f0f', 3)
     #plt.legend()
     #plt.savefig("saved_graphs/" + x_labels[-1] + "_progress" + ".png")      # Save Figure
     plt.show()
 
-def linePlot(labels, lst, clr):
+def linePlot(labels, lst, clr, g_type):
     plt.figure(figsize=(10, 5))
     plt.plot(labels, lst, color = clr)
     plt.xticks(rotation = 'vertical')
-    plt.savefig("saved_graphs/" + labels[-1] + "_progress" + ".png")
+    name = 'dailt'
+    if g_type == 0:
+        print('conf indian')
+        name = 'confirmed_indian'
+    elif g_type == 2:
+        name = 'cured'
+    elif g_type == 3:
+        name = 'deaths'
+    else:
+        name = 'rest'
+    plt.savefig("saved_graphs/" + labels[-1] + "_" + name + ".png")
+    print('saved')
 bar_chart()
 spread_chart()
 

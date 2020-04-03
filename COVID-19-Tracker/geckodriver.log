@@ -786,3 +786,12 @@ JavaScript error: https://www.mohfw.gov.in/, line 1417: TypeError: $(...).carous
 1585860432137	Marionette	INFO	Listening on port 33259
 1585860432237	Marionette	WARN	TLS certificate errors will be ignored for this session
 1585860450971	Marionette	INFO	Stopped listening on port 33259
+1585939362336	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAknRv1"
+1585939362620	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585939362909	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585939362909	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585939362910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585939362910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585939364338	Marionette	INFO	Listening on port 40069
+1585939364345	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585939389283	Marionette	INFO	Stopped listening on port 40069

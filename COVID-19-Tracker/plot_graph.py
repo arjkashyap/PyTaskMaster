@@ -33,6 +33,8 @@ def bar_chart():
         create_csv(current_data())
 
     df = pd.read_csv(file_path)
+    print(file_path)
+    print(df)
     states = df['state'].tolist()
     del states[-1]
     n_groups = len(states)      # Number of groups
@@ -42,6 +44,9 @@ def bar_chart():
     cnf_fn = df['foreign_confirmed'].tolist()        # Confirmed Foreigners
     cured = df['cured'].tolist()
     death = df['death'].tolist()
+    
+    print("death")
+    print(death)
     del cnf_in[-1], cnf_fn[-1], cured[-1], death[-1]
 
     # Creating Plot
@@ -110,6 +115,8 @@ def spread_chart():
         cnf_fn = df['foreign_confirmed'].tolist()      # Confirmed Foreigners
         cured = df['cured'].tolist()
         death = df['death'].tolist()
+        print("deaths: ")
+        print(death)
         cnf_in = [x for x in cnf_in if x == x]
         print(cnf_in)
         cnf_in = list(map(int, cnf_in))

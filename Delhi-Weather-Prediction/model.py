@@ -31,12 +31,29 @@ df.fillna(-99999, inplace=True)
 
 total = len(df)
 
-print(df)
 
 # Removing dates
-dates = np.array(df.drop('datetime_utc', axis=1, inplace=True))
+"""
+Date Time format: 
+    YYYY/mm/dd-Time
+"""
+dates = df['datetime_utc']
+df.drop('datetime_utc', axis=1, inplace=True)
 
-# Features 
+
+# Extracting year, month, and date
+y = dates.map( lambda y : y[0:4] )      # Year
+m = dates.map( lambda m : m[4: 6] )     # Month
+d = dates.map( lambda day: day[6: 8] )     # Date
+
+#df.insert(0, 'year', y)
+#df.insert(0, 'month', m)
+#df.insert(0, 'day', d)
+
+print("Data Frame")
+print(df)
+
+# Features
 X = np.array(df.drop(' _tempm', axis=1))
 print("Features")
 print(X)
@@ -69,3 +86,5 @@ for k in ['poly', 'rbf', 'sigmoid']:
     confidence = clf.score(X_test, y_test)
     print(k, confidence)
 """
+
+

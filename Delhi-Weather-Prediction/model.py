@@ -78,6 +78,8 @@ confidence = clf.score(X_test, y_test)
 
 print("Accuracy: " + str(confidence))
 
+
+# Testing other kernels
 """
 for k in ['poly', 'rbf', 'sigmoid']:
     print('current kernel: ', k)

@@ -1,30 +1,29 @@
-label,state,indian_confirmed,foreign_confirmed,cured,death
-
-1,Andhra Pradesh,14,0,1,0
-2,Andaman and Nicobar Islands,6,0,0,0
-3,Bihar,9,0,0,1
-4,Chandigarh,8,0,0,0
-5,Chhattisgarh,6,0,0,0
-6,Delhi,38,1,6,1
-7,Goa,3,0,0,0
-8,Gujarat,44,1,0,3
-9,Haryana,19,14,12,0
-10,Himachal Pradesh,3,0,0,1
-11,Jammu and Kashmir,20,0,1,1
-12,Karnataka,55,0,3,2
-13,Kerala,168,8,11,0
-14,Ladakh,13,0,3,0
-15,Madhya Pradesh,30,0,0,2
-16,Maharashtra,177,3,25,5
-17,Manipur,1,0,0,0
-18,Mizoram,1,0,0,0
-19,Odisha,3,0,0,0
-20,Puducherry,1,0,0,0
-21,Punjab,38,0,1,1
-22,Rajasthan,52,2,3,0
-23,Tamil Nadu,34,6,2,1
-24,Telengana,46,10,1,0
-25,Uttarakhand,4,1,0,0
-26,Uttar Pradesh,54,1,11,0
-27,West Bengal,15,0,0,1
-Total number of confirmed cases in India,862#,47,80,19
+label,state,confirmed,cured,death
+1,Andhra Pradesh,14,1,0.0
+2,Andaman and Nicobar Islands,6,0,0.0
+3,Bihar,9,0,1.0
+4,Chandigarh,8,0,0.0
+5,Chhattisgarh,6,0,0.0
+6,Delhi,39,6,1.0
+7,Goa,3,0,0.0
+8,Gujarat,45,0,3.0
+9,Haryana,33,12,0.0
+10,Himachal Pradesh,3,0,1.0
+11,Jammu and Kashmir,20,1,1.0
+12,Karnataka,55,3,2.0
+13,Kerala,176,11,0.0
+14,Ladakh,13,3,0.0
+15,Madhya Pradesh,30,0,2.0
+16,Maharashtra,180,25,5.0
+17,Manipur,1,0,0.0
+18,Mizoram,1,0,0.0
+19,Odisha,3,0,0.0
+20,Puducherry,1,0,0.0
+21,Punjab,38,1,1.0
+22,Rajasthan,54,3,0.0
+23,Tamil Nadu,40,2,1.0
+24,Telengana,56,1,0.0
+25,Uttarakhand,5,0,0.0
+26,Uttar Pradesh,55,11,0.0
+27,West Bengal,15,0,1.0
+Total number of confirmed cases in India,862#,127,19,

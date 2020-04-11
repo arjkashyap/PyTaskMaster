@@ -1,29 +1,28 @@
-label,state,indian_confirmed,foreign_confirmed,cured,death
-
-1,Andhra Pradesh,19,1,0
-2,Andaman and Nicobar Islands,9,0,0
-3,Bihar,11,0,1
-4,Chandigarh,8,0,0
-5,Chhattisgarh,7,0,0
-6,Delhi,49,6,2
-7,Goa,5,0,0
-8,Gujarat,58,1,5
-9,Haryana,33,17,0
-10,Himachal Pradesh,3,0,1
-11,Jammu and Kashmir,31,1,2
-12,Karnataka,76,5,3
-13,Kerala,182,15,1
-14,Ladakh,13,3,0
-15,Madhya Pradesh,30,0,2
-16,Maharashtra,186,25,6
-17,Manipur,1,0,0
-18,Mizoram,1,0,0
-19,Odisha,3,0,0
-20,Puducherry,1,0,0
-21,Punjab,38,1,1
-22,Rajasthan,55,3,0
-23,Tamil Nadu,49,4,1
-24,Telengana,66,1,1
-25,Uttarakhand,7,2,0
-26,Uttar Pradesh,65,11,0
-27,West Bengal,18,0,1
+label,state,confirmed,cured,death
+1,Andhra Pradesh,20,0,
+2,Andaman and Nicobar Islands,9,0,
+3,Bihar,11,1,
+4,Chandigarh,8,0,
+5,Chhattisgarh,7,0,
+6,Delhi,55,2,
+7,Goa,5,0,
+8,Gujarat,59,5,
+9,Haryana,50,0,
+10,Himachal Pradesh,3,1,
+11,Jammu and Kashmir,32,2,
+12,Karnataka,81,3,
+13,Kerala,197,1,
+14,Ladakh,16,0,
+15,Madhya Pradesh,30,2,
+16,Maharashtra,211,6,
+17,Manipur,1,0,
+18,Mizoram,1,0,
+19,Odisha,3,0,
+20,Puducherry,1,0,
+21,Punjab,39,1,
+22,Rajasthan,58,0,
+23,Tamil Nadu,53,1,
+24,Telengana,67,1,
+25,Uttarakhand,9,0,
+26,Uttar Pradesh,76,0,
+27,West Bengal,18,1,

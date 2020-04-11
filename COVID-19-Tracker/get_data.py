@@ -62,7 +62,7 @@ def create_csv(data):
     # Write headers
     with open(file_name, 'w') as f:
         w = csv.writer(f)
-        header = ['label', 'state', 'indian_confirmed', 'foreign_confirmed', 'cured', 'death']
+        header = ['label', 'state', 'confirmed', 'cured', 'death']
         w.writerow(header)
 
         for row in data:

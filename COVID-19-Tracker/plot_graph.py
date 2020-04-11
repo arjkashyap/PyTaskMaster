@@ -33,21 +33,18 @@ def bar_chart():
         create_csv(current_data())
 
     df = pd.read_csv(file_path)
+    df = df[['label', 'state', 'confirmed', 'cured', 'death']]
     print(file_path)
     print(df)
     states = df['state'].tolist()
     del states[-1]
     n_groups = len(states)      # Number of groups
     states = tuple(states)
-
-    cnf_in =df['indian_confirmed'].tolist()         # Confirmed Indian cases 
-    cnf_fn = df['foreign_confirmed'].tolist()        # Confirmed Foreigners
+    
+    confirmed = df['confirmed'].tolist()
     cured = df['cured'].tolist()
     death = df['death'].tolist()
-    
-    print("death")
-    print(death)
-    del cnf_in[-1], cnf_fn[-1], cured[-1], death[-1]
+    del confirmed[-1], cured[-1], death[-1]
 
     # Creating Plot
     fig, ax = plt.subplots()
@@ -55,18 +52,11 @@ def bar_chart():
     index = np.arange(n_groups)
     bar_width = 0.5
     opacity = 0.8
-    leg_1 = plt.bar(index, cnf_in, bar_width,
+    leg_1 = plt.bar(index, confirmed, bar_width,
             alpha=opacity,
             color='#05028f',
-            label='Indian Confirmed',
+            label='Confirmed',
             yerr = None)
-
-    leg_2 = plt.bar(index, cnf_fn, bar_width,
-            alpha=opacity,
-            color='#6aafdb',
-            label='Foreign Confirmed',
-            yerr=None
-            )
 
     leg_3 = plt.bar(index, cured, bar_width,
             alpha=opacity,
@@ -96,8 +86,7 @@ def spread_chart():
     data = list(reversed(data_lst))
     x_labels = []
 
-    cnf_in_lst = []
-    cnf_fn_lst = []
+    confirmed_lst = []
     cured_lst = []
     death_lst = []
 
@@ -105,29 +94,22 @@ def spread_chart():
     regex = re.compile(r"\d\d[-]\d\d[-]\d\d\d\d")
     for day in data:
         label = regex.search(day)
-        print("Day: " +  day)
         df = pd.read_csv(day)
+        print(day)
+        print(df.head())
         df.drop(df.tail(1).index,inplace=True) # drop last n rows
-        print(df)
-        print(df['indian_confirmed'])
         x_labels.append(label.group())
-        cnf_in = df['indian_confirmed'].tolist()         # Confirmed Indian cases 
-        cnf_fn = df['foreign_confirmed'].tolist()      # Confirmed Foreigners
+        confirmed = df['confirmed'].tolist()
         cured = df['cured'].tolist()
         death = df['death'].tolist()
-        print("deaths: ")
-        print(death)
-        cnf_in = [x for x in cnf_in if x == x]
-        print(cnf_in)
-        cnf_in = list(map(int, cnf_in))
-        cnf_in_lst.append(sum(cnf_in))
-        cnf_fn_lst.append(sum(cnf_fn))
+        confirmed = [x for x in confirmed if x == x]
+
+        confirmed_lst.append(sum(confirmed))
         cured_lst.append(sum(cured))
         death_lst.append(sum(death))
 
     # Plotting categorically
-    linePlot(x_labels, cnf_in_lst, '#05028f', 0)
-    linePlot(x_labels, cnf_fn_lst, '#6aafdb', 1)
+    linePlot(x_labels, confirmed_lst, '#05028f', 0)
     linePlot(x_labels, cured_lst,'#00c20f', 2)
     linePlot(x_labels, death_lst, '#ff3f0f', 3)
     #plt.legend()

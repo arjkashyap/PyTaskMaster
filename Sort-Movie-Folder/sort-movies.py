@@ -1,26 +1,34 @@
 import os
 import requests
 from bs4 import BeautifulSoup as bs
-import collections
 
 
 MOVIES_DIR = "E:\Movies"
 MOVIES_LIST = os.listdir(MOVIES_DIR)     # list of movies names in movie_dir folder
 
+
 def arrange_movies(movies_ratings):
     """
     :param movies_ratings: an ordered dict of ratings -> movie_name
-    :return:
+    :return: nothing
     """
-    for i in range(len(movies_ratings)):
-        print(f"Movie: {movies_ratings[i][1]}, rating: {movies_ratings[i][0]}")
-    pass
+    prefix = 0              # '001_movie_name'
+    for rating in movies_ratings:
+        print(f"Movie: {movies_ratings[rating]} rating: {rating}")
+        movie_name_old = movies_ratings[rating]
+        movie_path_old = os.path.join(MOVIES_DIR, movie_name_old)
+        movie_name_new = f"{prefix:03d}-{movie_name_old}"
+        movie_path_new = os.path.join(MOVIES_DIR, movie_name_new)
+        os.rename(movie_path_old, movie_path_new)
+        prefix += 1
+
+    print(f"{prefix} movies sorted")
 
 
 def hash_movies(movies_list):
     """
     :param movies_list:
-    :return: an ordered dict of rating -> movie
+    :return: a dict of rating -> movie
     """
 
     movie_ratings = {}  # dict: rating -> movie name
@@ -52,16 +60,15 @@ def hash_movies(movies_list):
         except Exception as e:
             print("Error in finding movie rating: ", movie)
             print(e)
-    return collections.OrderedDict(sorted(movie_ratings.items(), reverse=True))
+
+    return dict(sorted(movie_ratings.items(), reverse=True))
 
 
 def main():
     print("Sorting Movies")
     ratings = hash_movies(MOVIES_LIST)
-    print("I came from main")
-    print(ratings)
-    arrange_movies()
-    print(ratings)
+    arrange_movies(ratings)
+    print("Done")
 
 
 if __name__ == '__main__':

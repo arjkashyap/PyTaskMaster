@@ -7,6 +7,25 @@ MOVIES_DIR = "E:\Movies"
 MOVIES_LIST = os.listdir(MOVIES_DIR)     # list of movies names in movie_dir folder
 
 
+def clean_prefix():
+    """
+    cleans out the prefix if the movie folder is already sorted
+    """
+    for movie in MOVIES_LIST:
+        requires_rename = False
+        old_name = os.path.join(MOVIES_DIR, movie)
+        name_split = movie.split("-")
+        n = len(name_split)
+        i = 0
+        while i < n and len(name_split[i]) == 3 and name_split[i].isnumeric():
+            requires_rename = True
+            i += 1
+        print("new namesplit")
+        if requires_rename:
+            new_name = os.path.join(MOVIES_DIR, "".join(name_split[i:n]))
+            os.rename(old_name, new_name)
+                
+
 def arrange_movies(movies_ratings):
     """
     :param movies_ratings: an ordered dict of ratings -> movie_name
@@ -65,6 +84,7 @@ def hash_movies(movies_list):
 
 
 def main():
+    clean_prefix()
     print("Sorting Movies")
     ratings = hash_movies(MOVIES_LIST)
     arrange_movies(ratings)

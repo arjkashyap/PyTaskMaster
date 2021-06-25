@@ -14,9 +14,9 @@ api = tweepy.API(auth)
 
 test_tweet_num = 1
 
-price_graph_path = "./assets/PriceGraph.png"
-priceUpImg = "./assets/Happy.png"
-priceDownImg = "./assets/Angry.png"
+price_graph_path = "./BitCointon/assets/PriceGraph.png"
+priceUpImg = "./BitCointon/assets/Happy.png"
+priceDownImg = "./BitCointon/assets/Angry.png"
 
 
 def btc_has_dipped():

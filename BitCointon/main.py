@@ -64,7 +64,8 @@ def main():
             images = (price_graph_path, priceUpImg)
             media_ids = [api.media_upload(i).media_id_string for i in images]
 
-        api.update_status(status=msg, media_ids=media_ids)
+        # uncommment this line to make tweet
+        #api.update_status(status=msg, media_ids=media_ids)   
         print("Tweet success")
     except Exception as e:
         print("An error occurred: ")
